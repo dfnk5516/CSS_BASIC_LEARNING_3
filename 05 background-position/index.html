@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+  <style>
+    .box{
+      width : 550px;
+      height : 350px;
+      border : 2px dashed lightgray;
+      background-image : url('https://heropy.blog/css/images/logo.png');
+      background-size : 100px;
+      background-repeat : no-repeat;
+      /* background-position : top left; */
+      /* background-position : left top; */
+      /* background-position : right bottom; */
+      /* background-position : bottom right; */
+      /* background-position : left center; */
+      /* background-position : center; */
+      /* center는 한번만 입력하면 center center 한것과 동일 */
+      
+      /* background-position : 100% 100%; */
+      background-position : 550px 0%;
+      background-position : 100% 0%;
+      background-position : 50px bottom;
+      /* 방향과 단위를 같이 쓸 수 있지만  x, y순서를 반드시 지켜야함 */
+      /* background-position : bottom 50px; > 틀린 문법! */
+    }
+  </style>
+  <template>
+    background-position : 배경 이미지의 위치를 설정
+
+    [속성]
+    % : 왼쪽 상단 모서리는 0% 0%, / % 사용시 주의해야됨! > 100%시 단위 입력과 출력이 다름
+    오른쪽 하단 모서리는 100%, 100% / 기본값 : 0% 0% / 앞은 x, 뒤는 y축
+
+    방향 : 방향을 입력하여 위치 설정
+    top, bottom, left, right, center
+
+    단위 : px, em, cm, 등 단위로 지정
+    /////////////////////////////////////
+    [사용법]
+    값이 방향일 경우
+    background-position : 방향1 방향2;
+
+    값이 단위(%, px 등)일 경우
+    background-position : x축 y축;
+  </template>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

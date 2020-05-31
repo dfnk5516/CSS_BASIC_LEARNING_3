@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+  <style>
+    .box{
+      background-image : url('https://heropy.blog/css/images/vendor_icons/css3.png');
+      background-repeat : no-repeat;
+      width : 750px;
+      height : 500px;
+      border : 2px dashed lightgray;
+    }
+  </style>
+  <template>
+    background-image : 요소의 배경에 하나 이상의 이미지를 삽입
+    
+    [속성]
+    none : 이미지 없음 / 기본값
+    url('경로') : 이미지 경로(URL)
+    
+    [사용법]
+    .box{
+      background-image : url('../img/image.jpg');
+      width : 120px;
+      height : 80px;
+    }
+    .box1{
+      <!-- 개별 속성 -->
+      background-image : url('../img/i1.jpg'),
+        url('../img/i2.jpg'),
+        url('../img/i3.jpg');
+    }
+    .box2{
+      <!-- 단축 속성 -->
+      background : url('../img/i1.jpg') no-repeat,
+      url('../img/i2.jpg') no-repeat 100px 50px,
+      url('../img/i3.jpg') repeat-x;
+    }
+    하나 이상의 배경 이미지를 삽입할 경우 , 로 구분.
+    먼저 작성된 이미지가 더 위에 쌓임.
+    이런 '다중 배경 이미지'는 IE8이하 버전에서 사용 불가
+  </template>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

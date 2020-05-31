@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+  <style>
+    .box{
+      width : 550px;
+      height : 350px;
+      border : 2px dashed lightgray;
+      background-image : url('https://heropy.blog/css/images/logo.png');
+      background-size : 100px;
+      background-repeat : repeat-x;
+      background-repeat : repeat-y;
+      background-repeat : no-repeat;
+    }
+  </style>
+  <template>
+    background-repeat : 배경 이미지의 반복을 설정
+
+    repeat : 배경 이미지를 수직, 수평으로 반복 / 기본값 : repeat
+    repeat-x : 배경 이미지를 수평으로 반복
+    repeat-y : 배경 이미지를 수직으로 반복
+    no-repeat : 반복 없음
+  </template>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
